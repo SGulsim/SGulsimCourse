@@ -5,7 +5,7 @@
     --color-accent: #FF5533;
     --color-grey: #868686;
     --color-white: #FFFFFF;
-
+    --container-width: 1440px;
     --grid-column-width: 101px;
     --grid-gap: 20px;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-    max-width: 1435px;
+    max-width: var(--container-width);
     margin: 0 auto;
 }
 
@@ -196,7 +196,7 @@ body {
     overflow: hidden;
 }
 
-.article-date + .article-source::before {
+.article-date+.article-source::before {
     content: ' · ';
 }
 
@@ -204,6 +204,7 @@ body {
     padding-top: 22px;
     padding-bottom: 56px;
     background-color: var(--color-primary);
+    min-width: var(--container-width);
 }
 
 .footer__column {

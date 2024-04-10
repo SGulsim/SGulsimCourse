@@ -1,59 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>KC News</title>
     <link rel="stylesheet" href="./style.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
+
 <body>
-<header class="header">
-    <div class="container">
-        <nav class="navigation grid header__navigation">
-            <a href="#" class="navigation__logo"><img class="navigation__image" src="./images/logo.svg" alt="Логотип"></a>
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--active">Главная</a></li>
-                <li class="navigation__item"><a href="./fashion.html" class="navigation__link">Мода</a></li>
-                <li class="navigation__item"><a href="./tech.html" class="navigation__link">Технологии</a></li>
-                <li class="navigation__item"><a href="./politics.html" class="navigation__link">Политика</a></li>
-                <li class="navigation__item"><a href="./sport.html" class="navigation__link">Спорт</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main class="main">
-    <section class="articles">
-        <div class="container grid">
-            <section class="articles__big-column">
-                
-            </section>
-            <section class="articles__small-column"></section>
-        </div>
-    </section>
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <nav class="navigation grid footer__navigation">
-            <a href="#" class="navigation__logo"><img class="navigation__image" src="./images/logo.svg" alt="Логотип"></a>
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link--active">Главная</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Мода</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Технологии</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Музыка</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Karpov</a></li>
-            </ul>
-        </nav>
-
-        <div class="footer__column">
-            <p class="footer__text">Сделано на Frontend курсе в <a href="https://karpov.courses/frontend" target="_blank" class="footer__link">Karpov.Courses</a></p>
-            <p class="footer__copyright">© 2021</p>
-        </div>
-    </div>
-</footer>
-<script src="./script.js"></script>
-<script>
-    renderNews(5);
-</script>
+    <div id="root"></div>
+    <script type="text/babel" data-preset="react" src="./script.js"></script>
 </body>
+
 </html>
